@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+<div class="col-md-5">
+    <form action="">
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email:</label>
+            <input required type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Password:</label>
+            <input required type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="form-check mb-3">
+            <label class="form-check-label">
+                <input required class="form-check-input" type="checkbox" name="remember"> Remember me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+    <div class="col-md-2"></div>
+    <div class="col-md-5">
+        <form action="">
+            <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input required type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="pwd" class="form-label">Password:</label>
+                <input required type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input required class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+<br>
+
+<h2>Our Facilities</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid animi assumenda commodi consequuntur eaque et excepturi fugiat fugit, ipsa ipsam iusto minus numquam optio perferendis quod recusandae repellat sequi similique, tempore tenetur vero voluptatem voluptatibus! A adipisci animi asperiores aspernatur, blanditiis dolor ducimus eos, error est hic inventore iste laborum numquam perferendis praesentium repellat repellendus temporibus, veritatis voluptas voluptatem?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi corporis maiores neque quos soluta suscipit totam, veniam. Architecto consequuntur exercitationem fugiat sapiente sint velit vitae! Doloribus facilis magnam voluptatum. Animi asperiores autem corporis culpa cupiditate doloremque facere id impedit inventore iste laboriosam nemo nihil nisi non nulla officiis perspiciatis, quo! Autem cumque dignissimos facere impedit, ipsum quas sed vitae.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, consequatur culpa cum facilis itaque labore magni molestias nobis odit officia officiis, praesentium quod sed! Aspernatur commodi ipsam iure laboriosam maxime nesciunt, officiis quae voluptates! Assumenda beatae consequatur enim fuga id inventore, ipsam iure molestiae nam, provident qui quibusdam sit totam voluptate voluptates. Consequatur doloribus maxime minus quaerat temporibus ut voluptatibus.</p>
+
+<div class="form-group">
+    <form action="">
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>
+
+{% endblock %}
